@@ -1,6 +1,10 @@
 # WumpusWorld
 Kadir Ersoy
 
+## Context
+
+This is a knowledge-based agent project.
+
 In our WumpusWorld, the agent always starts from grid (1,1) facing to east
 
 Each grid (except (1,1)) might contain a Wumpus that
@@ -40,10 +44,10 @@ Program can find if agent wins the game in time t by,
 - loading [kb.pl](./kb.pl) in swipl
 - with isWinner() predicate
 
-Dependencies:
+## Dependencies:
 - You must have [swi-prolog](https://www.swi-prolog.org/download/stable) installed.
 
-How to Run:
+## How to Run:
 ```
 % swipl (opening swi prolog)
 ?- [rules, kb].
