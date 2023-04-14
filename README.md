@@ -36,11 +36,21 @@ At each time-step, the agent might receive:
 
 Program can find if agent wins the game in time t by,
 
-- concatenating [rules.pl](http://rules.pl/) with some experience (examples below) in [kb.pl](http://kb.pl/)
-- loading [kb.pl](http://kb.pl/) in swipl
+- concatenating [rules.pl](./rules.pl) with some experience (examples below) in [kb.pl](./kb.pl)
+- loading [kb.pl](./kb.pl) in swipl
 - with isWinner() predicate
 
-Example [kb.pl](http://kb.pl)
+Dependencies:
+- You must have [swi-prolog](https://www.swi-prolog.org/download/stable) installed.
+
+How to Run:
+```
+% swipl (opening swi prolog)
+?- [rules, kb].
+?- isWinner(9).
+```
+
+Example [kb.pl](./kb.pl)
 
 ```prolog
 wumpusSight(1).
