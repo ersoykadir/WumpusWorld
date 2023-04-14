@@ -34,7 +34,7 @@ At each time-step, the agent might receive:
 
 `The agent learns the location of the walls after bumping. After learning the location, its wallInFront predicate should work correctly.`
 
-Program can be evaluated by
+Program can find if agent wins the game in time t by,
 
 - concatenating [rules.pl](http://rules.pl/) with some experience (examples below) in [kb.pl](http://kb.pl/)
 - loading [kb.pl](http://kb.pl/) in swipl
